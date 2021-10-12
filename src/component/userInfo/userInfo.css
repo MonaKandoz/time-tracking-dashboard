@@ -1,6 +1,7 @@
 .userInfo{
     position: absolute;
     height: 70%;
+    width: 100%;
     border-radius: 20px;
     background-color: var(--Blue);
     padding: 25px;
@@ -26,7 +27,6 @@
     .userInfo{
         display: flex;
         align-items: center;
-        width: 100%;
     }
     .userInfo h4{
         margin-top: 0;

@@ -6,7 +6,7 @@ import './tabContent.css';
 const TabContent = (props)=>{
     const [data, setData] = useState([]);
     const getData = ()=> {
-        fetch('data.json',{
+        fetch('time-tracking-dashboard/data.json',{
             headers : {
             'Content-Type': 'application/json',
             'Accept' : 'application/json'
