@@ -1,0 +1,40 @@
+.userInfo{
+    position: absolute;
+    height: 70%;
+    border-radius: 20px;
+    background-color: var(--Blue);
+    padding: 25px;
+    color: #fff;
+}
+
+.userInfo img{
+    width: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.userInfo h4{
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: var(--Pale-Blue)
+}
+.userInfo h1{
+    font-weight: lighter;
+}
+
+@media (max-width: 375px) {
+    .userInfo{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .userInfo h4{
+        margin-top: 0;
+    }
+    .userInfo h1{
+        font-size: 24px;
+    }
+    .infoContainer{
+        padding-left: 20px;
+    }
+}

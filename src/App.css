@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+  /*Primary*/
+  --Blue : hsl(246, 80%, 60%);
+  --Light-orange : hsl(15, 100%, 70%);
+  --Soft-blue : hsl(195, 74%, 62%);
+  --Light-red : hsl(348, 100%, 68%);
+  --Lime-green : hsl(145, 58%, 55%);
+  --Violet : hsl(264, 64%, 52%);
+  --Soft-orange : hsl(43, 84%, 65%);
+  
+  /*Neutral*/
+  --Very-dark-blue : hsl(226, 43%, 10%);
+  --Dark-blue : hsl(235, 46%, 20%);
+  --Desaturated-blue : hsl(235, 45%, 61%);
+  --Pale-Blue : hsl(236, 100%, 87%);
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+.App{
+  background-color: var(--Very-dark-blue);
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timeTracker{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 100px;
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.timeList{
+  height: 100%;
+  width : 20%;
+  border-radius: 20px;
+  position: relative;
+  background-color: var(--Dark-blue);
+}
+.tracker{
+  width:80%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 375px) {
+  .App{
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .timeTracker{
+    flex-direction: column;
+    height: auto;
+    padding: 100px 30px;
+  }
+  
+  .timeList{
+    height: 200px;
+    width : 100%;
+  }
+  .tracker{
+    width:100%
   }
 }
